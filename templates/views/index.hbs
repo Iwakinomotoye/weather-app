@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="app">
+        {{>header}}
+
+        <div class="user-data">
+            <p>Use this site to get your weather!</p>
+            <div class="form">
+                <input type="text" placeholder="Location" id="location-input">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <p class="error"></p>
+        <p class="message-one"></p>
+        <p class="message-two"></p>
+        <p class="status">loading...</p>
+
+        {{>footer}}
+    </div>
+</body>
+<script src="/js/index.js"></script>
+</html>
